@@ -1,0 +1,15 @@
+*
+!.gitignore
+!*.vhd
+!*.qsf
+!*.qpf
+!*.pdf
+!*.qip
+!*_hw.tcl
+!*.sdc
+!*.stp
+!*.qsys
+!*.c
+!*/
+*_bsp
+*.bak
