@@ -1,13 +1,14 @@
 *
 !.gitignore
 !*.vhd
+!*.png
 !*.qsf
 !*.qpf
 !*.pdf
 !*.qip
 !*_hw.tcl
 !*.sdc
-!*.stp
+!*.stps
 !*.qsys
 !*.c
 !*/
