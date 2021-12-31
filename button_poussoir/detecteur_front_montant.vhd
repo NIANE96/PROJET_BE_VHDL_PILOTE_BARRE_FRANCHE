@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use IEEE.std_logic_unsigned.all;
 
----debut entity----------------------------------------------------------------------------------------------------------------
+---debut entity-------------------------------------------------------------
 entity detecteur_front_montant is
 port( 
     clk : in  std_logic;
@@ -12,8 +12,7 @@ port(
     BP_FM : out std_logic
 );
 end detecteur_front_montant;
------fin entity-------------------------------------------------------------
-
+-----fin entity------------------------------------------------------------
 
 --- debut  architecture pour détecté un front montant --------------------
 architecture arch_DFM of detecteur_front_montant is

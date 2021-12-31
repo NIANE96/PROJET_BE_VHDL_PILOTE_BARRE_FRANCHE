@@ -1,4 +1,7 @@
-
+------ ABDOULAYE NIANE M2 SME
+------ BE VHDL PILOTE BARRE FRANCHE 
+------ 12/11/2021 
+------
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
@@ -14,9 +17,7 @@ entity generation_bip is
 end generation_bip;
 
 architecture rtl of generation_bip is
-    --signal cmpt_bip : std_logic_vector (7 downto 0);
     signal f_bip, s_bip : std_logic;
-
     type etat_bip is (sans_bip, mode_interm, mode_simple_bip, mode_double_bip);
     signal mode_bip : etat_bip;
 begin
@@ -50,8 +51,7 @@ begin
                         mode_bip <= mode_double_bip;
                    end if;
 --------------- Fin mode simple bip-------------------------------
- 
-                         
+                     
 --------------- teste return mode sans bip-----------------------------
               when mode_double_bip => 
                    if (f_bip='1') then 
