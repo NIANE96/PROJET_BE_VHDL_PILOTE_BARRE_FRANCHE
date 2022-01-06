@@ -26,7 +26,7 @@ Process (CLK,reset_n )
 			end if;
 		end if;
 	End Process;
-
+	
 Q <= sig_Q;
 
 End arch_comparateur_duty;

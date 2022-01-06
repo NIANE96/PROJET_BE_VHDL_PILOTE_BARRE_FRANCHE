@@ -22,23 +22,23 @@ component compteur_n
 generic( modulo : integer := 255); -- N=8 bits nombre de bits 2^8=255
 
 port( CLK, reset_n, reset : in std_logic;
-	  Q s             : out std_logic_vector (7 downto 0));
+	  Q : out std_logic_vector (7 downto 0));
 end component ;
 ----end component compteur_n---
 
 -- declaration de la composant comparateur_freq
 component comparateur_freq
-port	( CLK, reset_n       : in std_logic;
+port	( CLK, reset_n : in std_logic;
 	  e_compteur_n, FREQ : in std_logic_vector (7 downto 0);
-	  Q	             : out std_logic);
+	  Q : out std_logic);
 end component;
 -- end de la composant comparateur_freq
 
 -- declaration de la composant comparateur_duty
 component comparateur_duty
-port	( CLK , reset_n 	   : in std_logic;
+port	( CLK , reset_n : in std_logic;
 	  e_compteur_n, DUTY_CYCLE : in std_logic_vector (7 downto 0);
-	  Q	                   : out std_logic);
+	  Q : out std_logic);
 end component;
 -- end de la composant comparateur_duty
 
